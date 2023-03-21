@@ -1,9 +1,9 @@
 pipeline {
-    agent any 
+    agent { label 'aspen-staging-permanent' }
     stages {
-        stage('Clone the repo') {
+        stage('Pull the repo') {
             steps {
-                echo 'clone the repo'
+                echo "Works?"
             }
         }
     }
