@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Pull the repo') {
             steps {
-                echo "Works?"
+                dir('/home/aspen2022/testJenkins') {
+                    sh 'pwd'
+                }
             }
         }
     }
